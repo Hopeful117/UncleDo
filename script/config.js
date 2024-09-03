@@ -40,5 +40,5 @@ ImageFood.src ="Images/Carte/Food.jpg"
 tableauImage.push(ImageFood)
 
 const ImageHelp = new Image();
-ImageHelp.src="Images/Carte/Help.jpg"
+ImageHelp.src="Images/Carte/help.jpg"
 tableauImage.push(ImageHelp)
