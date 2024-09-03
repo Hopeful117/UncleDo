@@ -90,7 +90,7 @@ function precedent(){
 // )
 
 function Menu(){
-    document.location.href="index.html"
+    document.location.href="Index.html"
 
 }
 
