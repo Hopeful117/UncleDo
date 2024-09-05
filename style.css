@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     background-color: #FFF9C4;
     
     
@@ -47,7 +48,9 @@ button {
     text-decoration: none;
     
 }
-
+#sound{
+   margin-left:30%;
+}
 
 
 .zoneAffichageTH{
@@ -72,4 +75,10 @@ button {
         margin-left: 40px;
         margin-right:40px;
     }
+    #sound{
+        width:33%;
+        margin-left:33%;
+        margin-right:33%;
+        
+     }
 }
