@@ -97,3 +97,6 @@ function Menu(){
 function Learn(){
     document.location.href="learn.html"
 }
+function PlaySound(){
+    son[i].play();
+}
