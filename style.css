@@ -37,6 +37,7 @@ footer{
 }
 
 button {
+    flex:1;
     margin: 30px;
    
     width: 200px;
