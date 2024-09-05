@@ -47,6 +47,11 @@ button {
     
 }
 
+#sound{
+    margin:0;
+
+}
+
 .zoneAffichageTH{
     font-size: 100px;
 }
