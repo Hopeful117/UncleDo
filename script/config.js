@@ -1,7 +1,8 @@
 
 const tableauMotsEN1 = ["Hello","Yes","No","Please","Thank you","Goodbye","Sorry","Water","Food","Help"];
 const tableauMotsTH1 = ["สวัสดี","ใช่","ไม่","โปรด","ขอบคุณ","ลาก่อน","ขอโทษ","น้ำ","อาหาร","ช่วย"];
-const tableauImage =  []
+const tableauImage =  [];
+const son = [ new Audio('Sound/Hello.wav')];
 
 const imageHello = new Image();
 imageHello.src="Images/Carte/hello.jpg"
