@@ -2,7 +2,9 @@
 const tableauMotsEN1 = ["Hello","Yes","No","Please","Thank you","Goodbye","Sorry","Water","Food","Help"];
 const tableauMotsTH1 = ["สวัสดี","ใช่","ไม่","โปรด","ขอบคุณ","ลาก่อน","ขอโทษ","น้ำ","อาหาร","ช่วย"];
 const tableauImage =  [];
-const son = [ new Audio('Sound/Hello.wav')];
+const son = [ new Audio('Sound/Hello.wav'),new Audio('Sound/Yes.wav'),new Audio('Sound/No.wav'),new Audio('Sound/Please.wav'),new Audio ('Sound/Thank.wav'),
+    new Audio('Sound/Bye.wav'), new Audio ('Sound/Sorry.wav'),new Audio ('Sound/Water.wav'),new Audio('Sound/Food.wav'),new Audio('Sound/Help.wav')
+];
 
 const imageHello = new Image();
 imageHello.src="Images/Carte/hello.jpg"
