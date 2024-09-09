@@ -12,6 +12,8 @@
     let English= document.getElementById("English")
     let Thai= document.getElementById("Thai")
     let carte= document.querySelector(".carte")
+    
+    
     let i=0;
   
     
@@ -24,7 +26,8 @@
       
     
     console.log(carte)
-   
+    console.log(rdimage)
+
         
         
 
@@ -89,14 +92,33 @@ function precedent(){
     // }
 // )
 
+
+function PlaySound(){
+    son[i].play();
+}
+
+function Play(){
+    document.location.href="play.html"
+    rdImage()
+    
+    
+}
+
+function rdImage(){
+    const alea = document.getElementById("alea")
+    const randomIndex = Math.floor(Math.random() * tableauImage.length);
+    i=randomIndex
+    console.log(i)
+    alea.src=tableauImage[i]
+    
+   
+    
+    
+   
+   
+}
+    
 function Menu(){
     document.location.href="index.html"
 
-}
-
-function Learn(){
-    document.location.href="learn.html"
-}
-function PlaySound(){
-    son[i].play();
 }

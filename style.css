@@ -57,6 +57,10 @@ button {
     font-size: 100px;
 }
 
+#1,#2,#3{
+    margin: 30px;
+}
+
 @media (max-width: 600px) {
     img{
         width: 100%;
