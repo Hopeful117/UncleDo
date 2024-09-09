@@ -57,10 +57,24 @@ button {
     font-size: 100px;
 }
 
-#1,#2,#3{
-    margin: 30px;
+
+
+#answer{
+    width:33%;
+    margin-left:33%;
+    margin-right:33%;
+    margin-top:50px;
+    
+
 }
 
+#answer1,#answer2,#answer3{
+    margin:30px;
+}
+#validate{
+    margin-left:33%;
+    margin-right:33%;
+}
 @media (max-width: 600px) {
     img{
         width: 100%;

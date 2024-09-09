@@ -97,26 +97,9 @@ function PlaySound(){
     son[i].play();
 }
 
-function Play(){
-    document.location.href="play.html"
-    rdImage()
-    
-    
-}
 
-function rdImage(){
-    const alea = document.getElementById("alea")
-    const randomIndex = Math.floor(Math.random() * tableauImage.length);
-    i=randomIndex
-    console.log(i)
-    alea.src=tableauImage[i]
-    
-   
-    
-    
-   
-   
-}
+
+
     
 function Menu(){
     document.location.href="index.html"
