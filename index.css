@@ -65,9 +65,9 @@ h1 {
     }
 
     #learn,#play{
-        width: 75px;
+        width: 150px;
         height: 30px;
-        margin:10px;
+        
         border-radius: 20px;
         }
 
