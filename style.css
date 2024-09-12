@@ -9,10 +9,26 @@ body{
     justify-content: center;
     align-items: center;
     
-    background-color: #FFF9C4;
+    background-color: #90C8C8;
     
     
 }
+#navlearn{
+    background-image: url(Images/fond/7068210b-29bc-4a4b-bc1e-6213f19f5e2c.webp);
+    color:white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    margin-bottom:100px;
+    width:100%;
+}
+
 
 h1 {
     flex:1;
@@ -99,4 +115,19 @@ button {
         margin-right:33%;
         
      }
+
+     #navlearn{
+        background-image: url(Images/fond/7068210b-29bc-4a4b-bc1e-6213f19f5e2c.webp);
+        background-position: center;
+        background-size: cover;
+        background-color: #90C8C8;
+       
+        color: white;
+        
+        display:flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
 }
