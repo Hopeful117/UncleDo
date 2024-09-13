@@ -72,6 +72,9 @@ button {
     font-weight: bold;
     text-decoration: none;
     font-size:30px;
+    background-color: white;
+
+
     
 }
 #sound{
@@ -100,6 +103,14 @@ button {
 #validate{
     margin-left:33%;
     margin-right:33%;
+
+
+}
+
+#apprentissage{
+    background-image: url(Images/fond/cahier.webp);
+    background-size: cover;
+    background-position: center;
 }
 @media (max-width: 600px) {
     img{
