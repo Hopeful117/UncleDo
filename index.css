@@ -55,8 +55,8 @@ h1 {
     height:50px;
     margin:10px;
     font-weight: bold;
-    flex:1;
-    margin: 30px;
+    
+   
    
     width: 200px;
     height: 50px;
@@ -88,6 +88,7 @@ h1 {
         height: 30px;
         
         border-radius: 20px;
+        font-size:15px;
         }
 
     
