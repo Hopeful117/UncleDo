@@ -18,46 +18,51 @@
 <nav id="navlearn">
     <h1>มาเรียนภาษาอังกฤษด้วยกันนะ</h1>
     <div>
-    <button id="Menu" onclick="Menu()">Menu</button>
+    <button class="Menu" onclick="Menu()">Menu</button>
     </div>
 </nav>
 <body>
 
-<main>
+
     
     <div class="zoneAffichageImage">
         <img src ="" class="carte">
 <!-- Ici devront s'afficher les images -->
     </div>
+    
    
-<div id="apprentissage">
-    <div class="zoneAffichageTh">
+<div>
+   
         <!-- Ici devront s'afficher les mots correspondant aux images -->
-        <h2 id="Thai"></h2>
+        <p id="Thai"></p>
 
     </div>
-    <div class="zoneAffichageEn">
-        <h2 id="English"></h2>
+    <div>
+    
+        <p id="English"></p>
+
+</div>
+
+        </div>
       
         
-<!-- Ici devront s'afficher 3 proposition -->
-    </div>
-    </div>
+        <div>
+            <button id="sound" onclick="PlaySound()">&#x1F50A;</button>
+           </div>
+    <div id="blockbutton">
+   
     
-   <div>
-    <button id="sound" onclick="PlaySound()">&#x1F50A;</button>
-   </div>
-    
-    <div>
+    <div id="btnlearn">
         
        
     <button id="previous" onclick="precedent()">Previous </button>
     
     <button id ="next" onclick="next()">Next</button>
     </div>
+    </div>
+</body>
     
-</main>
+
 <footer>
     © Copyright Ludovic Brot & Siriwan Majan
  </footer>
-</body>

@@ -5,8 +5,11 @@
     font-family: "Schoolbell", cursive;
     font-weight: 400;
     font-style: normal;
+    margin:0;
+    font-size:40px;
     
 }
+
 body{
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +21,7 @@ body{
     
     
 }
-#navlearn{
+#navlearn,#navplay{
     background-image: url(Images/fond/7068210b-29bc-4a4b-bc1e-6213f19f5e2c.webp);
     color:white;
     background-position: center;
@@ -32,11 +35,27 @@ body{
 
     margin-bottom:100px;
     width:100%;
+    
+}
+
+.Menu,#Start,#previous,#next,#sound,#validate{
+    width:300px;
+    height:50px;
+    margin:10px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    
+    
+   
+   
+   
 }
 
 
 h1 {
-    flex:1;
+    
     font-family: "Schoolbell", cursive;
   font-weight: 400;
   font-style: normal;
@@ -52,9 +71,7 @@ h2 {
    font-size: 35px;
    text-align:center;
 }
-header{
-    margin-bottom: 50px;
-}
+
 
 footer{
     margin: 30px;
@@ -62,94 +79,112 @@ footer{
     font-weight: bold;
 }
 
-button {
-    flex:1;
-    margin: 30px;
+
+
+
+
+
+
+
+
+
+#answer,#apprentissage{
    
-    width: 200px;
-    height: 50px;
+    background-image: url(Images/fond/cahier.webp);
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    text-align: center;
+    padding:150px;
+    padding-left: 250px;
+    padding-right:250px;
+    font-size: 50px;
+    
+    
+
+}
+label{
+    border: solid black 5px;
     border-radius: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size:30px;
-    background-color: white;
-
-
-    
-}
-#sound{
-   margin-left:30%;
-}
-
-
-.zoneAffichageTH{
-    font-size: 100px;
-}
-
-
-
-#answer{
-    width:33%;
-    margin-left:33%;
-    margin-right:33%;
-    margin-top:50px;
-    
-
 }
 
 #answer1,#answer2,#answer3{
     margin:30px;
-}
-#validate{
-    margin-left:33%;
-    margin-right:33%;
-
 
 }
 
-#apprentissage{
-    background-image: url(Images/fond/cahier.webp);
-    background-size: cover;
-    background-position: center;
-}
+
+
+
+
+
+
+
 @media (max-width: 600px) {
-    img{
-        width: 100%;
+    *{
+        margin:0;
     }
+    img{
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 
     #previous,#next{
-        width: 33%;
-        margin:0;
+        display:block;
+        width: 100px;
+        height: 30px;
+        margin-left:auto;
+        margin-right:auto;
+        
         font-size: 15px;
+        
        
         
         
         
     }
 
-    #previous{
-        margin-left: 40px;
-        margin-right:40px;
-    }
+   
     #sound{
-        width:33%;
-        margin-left:33%;
-        margin-right:33%;
+        display:block;
+        width:100px;
+        margin-left:auto;
+        margin-right:auto;
         
      }
 
-     #navlearn{
-        background-image: url(Images/fond/7068210b-29bc-4a4b-bc1e-6213f19f5e2c.webp);
-        background-position: center;
-        background-size: cover;
-        background-color: #90C8C8;
-       
-        color: white;
+     
+    #Start,.Menu{
+        width: 100px;
+        height: 30px;
+        margin:5px;
         
-        display:flex;
+        border-radius: 20px;
+        font-size:15px;
+        }
+        #answer{
+            padding:100px;
+        }
+        #answer1,#answer2,#answer3{
+            margin:15px;
         
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-    }
+        }
+
+        #apprentissage{
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            
+          
+           
+            
+            margin-bottom: 30px;
+        }
+
+        
+        
+        
 }

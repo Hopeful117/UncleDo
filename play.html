@@ -12,29 +12,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
-<h1>มาเล่นด้วยกัน</h1>
-<nav>
-    <button id="Menu" onclick="Menu()">Menu</button>
-    <button onclick="rdImage()">Play</button>
+
+<nav id="navplay">
+    <h1>มาเล่นด้วยกัน</h1>
+    <div>
+    <button class="Menu" onclick="Menu()">Menu</button>
+    <button id="Start" onclick="rdImage()">Start</button>
+    </div>
 </nav>
 <body>
-    <main>
+    
         
        
         <div>
             <img id="alea">
         </div>
         <div id="answer" hidden>
-        <input type="radio" id="answer1" value="1" >
-        <label for="answer1">option1</label>
+        <input type="radio" id="answer1" value="1">
+        <label for="answer1">0</label><br>
         <input type="radio" id="answer2" value="2">
-        <label for="answer2">option2</label>
+        <label for="answer2">0</label><br>
         <input type="radio" id="answer3" value="3">
-        <label for="answer3">option3</label>
+        <label for="answer3">0</label><br>
         </div>
+        <div id="scorezone" hidden></div>
+        <div>
 
-        <button id="validate" hidden>validate</button>
-    </main>
+        <button id="validate" onclick="rdImage()" hidden>validate</button>
+        </div>
+    
     
     <footer>
         © Copyright Ludovic Brot & Siriwan Majan
