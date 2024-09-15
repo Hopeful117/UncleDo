@@ -88,26 +88,18 @@ footer{
 
 
 
-#answer,#apprentissage{
-   
-   
-    margin-top: 100px;
-    text-align: center;
-    padding:150px;
-    padding-left: 250px;
-    padding-right:250px;
-    font-size: 50px;
-    
-    
 
-}
-label{
+form{
+    margin-top:40px;
+    margin-bottom:40px;
+    background-color: white;
     border: solid black 5px;
     border-radius: 20px;
 }
 
 #answer1,#answer2,#answer3{
-    margin:30px;
+    margin:10px;
+    
 
 }
 
@@ -166,6 +158,8 @@ label{
        
         #answer1,#answer2,#answer3{
             margin:50px;
+            margin-left:10px;
+
         
         }
 
