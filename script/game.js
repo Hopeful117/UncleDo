@@ -1,22 +1,24 @@
+let score=0;
+let nbquestion=0;   
 function rdImage(){
     const alea = document.getElementById("alea")
     const randomIndex = Math.floor(Math.random() * tableauImage.length);
     const answer= document.getElementById("answer")
     const validate= document.getElementById("validate")
     i=randomIndex
-    score=0;
-   
+    
     const question=tableauImage[randomIndex]
     alea.src=question.src
     
 
     answer.hidden=false
     validate.hidden=false
-    scorezone.hidden=false
     
+
    
 
     const reponse = document.querySelectorAll('#answer label')
+    const reponsevalue=document.querySelectorAll('input[name="reponse"]')
    
     const j =Math.floor(Math.random()*reponse.length);
    
@@ -24,6 +26,7 @@ function rdImage(){
         let rdanswer=getrdanswer();
         
         reponse[k].innerHTML=tableauMotsTH1[rdanswer]
+        reponsevalue[k].value=tableauMotsTH1[rdanswer]
        
 
 
@@ -31,8 +34,9 @@ function rdImage(){
 
 
     const bonneReponse=reponse[j];
-    
+    const bonneReponseValue=reponsevalue[j];
     bonneReponse.innerHTML=tableauMotsTH1[i];
+    bonneReponseValue.value=tableauMotsTH1[i];
     
      
 
@@ -40,7 +44,7 @@ function rdImage(){
    
     
     
-   
+   return tableauMotsTH1[i]
    
 }
 
@@ -56,3 +60,27 @@ function getrdanswer(){
 
 
         
+function chkAnswer(){
+    let Answer=document.querySelectorAll('input[name="reponse"]')
+    let slcAnswer="";
+    let scorezone=document.getElementById("scorezone")
+    for (let k=0;k<Answer.length;k++){
+        if(Answer[k].checked){
+            slcAnswer=Answer[k].value
+            break
+        }
+
+    }
+  if(slcAnswer===tableauMotsTH1[i]){
+    console.log(slcAnswer)
+    score++
+    nbquestion++
+    scorezone.innerHTML=("Your score is "+score+" / "+nbquestion )
+    rdImage();
+  }
+  else{
+    nbquestion++
+    scorezone.innerHTML=("Your score is "+score+" / "+nbquestion )
+    rdImage();
+  }
+}
