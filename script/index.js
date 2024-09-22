@@ -1,3 +1,5 @@
+
+
 function Menu(){
     document.location.href="index.html"
 
@@ -12,4 +14,8 @@ function Play(){
     
     
     
+}
+
+function askUserName() {
+    userName = prompt("กรุณากรอกชื่อของคุณ :");
 }

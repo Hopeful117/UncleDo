@@ -5,7 +5,7 @@
 
 
 
-
+// Initialisation de la page 
 
     let boutonSuivant = document.getElementById("next")
     let boutonPrecedent =document.getElementById("previous")
@@ -17,7 +17,7 @@
     let i=0;
   
     
-    carte.src=tableauImage[i].src
+    carte.src=tableauImage1[i].src
         English.innerText=tableauMotsEN1[i]
         Thai.innerText=tableauMotsTH1[i]
         boutonPrecedent.disabled=true;
@@ -25,12 +25,10 @@
    
       
     
-    console.log(carte)
-    console.log(rdimage)
-
+    
         
         
-
+// fonction gérant l'affichage de l'image et des valeurs associés suivantes
 
     function next (){
        
@@ -39,7 +37,7 @@
             boutonSuivant.disabled=true;
             English.innerText=tableauMotsEN1[i]
             Thai.innerText=tableauMotsTH1[i]
-            carte.src=tableauImage[i].src
+            carte.src=tableauImage1[i].src
             console.log(i)
             
         }
@@ -49,7 +47,7 @@
             i++
             English.innerText=tableauMotsEN1[i]
         Thai.innerText=tableauMotsTH1[i]
-        carte.src=tableauImage[i].src
+        carte.src=tableauImage1[i].src
         }
         
     }
@@ -67,7 +65,7 @@
             
         
     
-        
+   // fonction gérant l'affichage de l'image et des valeurs associés précédentes     
   
 function precedent(){
         if(i===0){
@@ -82,16 +80,15 @@ function precedent(){
             i--
             English.innerText=tableauMotsEN1[i]
         Thai.innerText=tableauMotsTH1[i]
-        carte.src=tableauImage[i].src
+        carte.src=tableauImage1[i].src
         console.log(i)
         }
     }
 
        
 
-    // }
-// )
-
+ 
+// fonction gérant la lecture des sons après appuis sur le bouton
 
 function PlaySound(){
     son[i].play();
@@ -100,7 +97,7 @@ function PlaySound(){
 
 
 
-    
+// fonction gérant le bouton Menu    
 function Menu(){
     document.location.href="index.html"
 

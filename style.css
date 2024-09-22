@@ -77,6 +77,8 @@ footer{
     margin: 30px;
    
     font-weight: bold;
+    text-align: center;
+    text-align: justify;
 }
 
 
@@ -103,7 +105,10 @@ form{
 
 }
 
-
+#Starter{
+    margin-bottom: 50px;
+    
+}
 
 
 
@@ -147,14 +152,7 @@ form{
      }
 
      
-    #Start,.Menu{
-        width: 100px;
-        height: 30px;
-        margin:5px;
-        
-        border-radius: 20px;
-        font-size:15px;
-        }
+    
        
         #answer1,#answer2,#answer3{
             margin:50px;
@@ -174,6 +172,14 @@ form{
             margin-bottom: 30px;
         }
 
+        footer{
+            margin: 30px;
+           
+            font-weight: bold;
+            text-align: center;
+            
+        }
+    
         
         
         

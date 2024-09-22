@@ -12,21 +12,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
-
+<!-- Menu de navigation de la page -->
 <nav id="navplay">
     <h1>มาเล่นด้วยกัน</h1>
     <div>
     <button class="Menu" onclick="Menu()">Menu</button>
-    <button id="Start" onclick="rdImage()">Start</button>
+   
     </div>
 </nav>
 <body>
+    <div id="Starter">
+        <button id="Start" onclick="rdImage()">Start</button>
+    
+    </div>
     
         
-       
+   <!-- Image et bouton radio aleatoire     -->
         <div>
             <img id="alea">
         </div>
+        <!-- On donne le même nom au bouton radio pour qu'on ne puisse en selectioné qu'un -->
         <div id="answer" hidden>
             <form>
         <input type="radio" id="answer1" name="reponse" value="1">
@@ -37,7 +42,9 @@
         <label for="answer3">0</label><br>
         </div>
     </form>
+    <!-- Affichage du score -->
         <div id="scorezone" ></div>
+        <!-- Bouton valider -->
         <div>
         
 
@@ -46,7 +53,8 @@
     
     
     <footer>
-        © Copyright Ludovic Brot & Siriwan Majan
+        © Copyright Ludovic Brot & Siriwan Majan<br>
+        Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6033">Pixabay</a>
      </footer>
 
 </body>
