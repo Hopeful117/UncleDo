@@ -51,11 +51,11 @@ ImageFamily.src= "Images/Carte/family.jpg"
 tableauImage1.push(ImageFamily)
 
 const ImageFriend = new Image();
-ImageFriend.src= "Images/carte/friend.jpg"
+ImageFriend.src= "Images/Carte/friend.jpg"
 tableauImage1.push(ImageFriend)
 
 const ImageAnimal = new Image();
-ImageAnimal.src="Images/carte/Animal.jpg"
+ImageAnimal.src="Images/Carte/Animal.jpg"
 tableauImage1.push(ImageAnimal)
 
 const Correct = new Audio('Soundeffect/correct.mp3');
