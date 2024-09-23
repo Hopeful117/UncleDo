@@ -58,6 +58,9 @@ const ImageAnimal = new Image();
 ImageAnimal.src="Images/Carte/Animal.jpg"
 tableauImage1.push(ImageAnimal)
 
+const ImageHouse = new Image();
+ImageHouse.src="Images/Carte/House.jpg"
+
 const Correct = new Audio('Soundeffect/correct.mp3');
 const Wrong = new Audio ('Soundeffect/wrong.mp3');
 
