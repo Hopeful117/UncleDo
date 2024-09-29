@@ -79,6 +79,10 @@ const ImageCold = new Image();
 ImageCold.src = "Images/Carte/cold.jpg"
 tableauImage1.push(ImageCold)
 
+const ImageHot= new Image();
+ImageHot.src = "Images/Carte/Hot.jpg"
+tableauImage1.push(ImageHot)
+
 const Correct = new Audio('Soundeffect/correct.mp3');
 const Wrong = new Audio ('Soundeffect/wrong.mp3');
 
