@@ -5,7 +5,7 @@ const tableauImage1 =  [];
 const son = [ new Audio('Sound2/Hello.mp3'),new Audio('Sound2/Yes.mp3'),new Audio('Sound2/No.mp3'),new Audio('Sound2/Please.mp3'),new Audio ('Sound2/Thank.mp3'),
     new Audio('Sound2/Goodbye.mp3'), new Audio ('Sound2/Sorry.mp3'),new Audio ('Sound2/Water.mp3'),new Audio('Sound2/Food.mp3'),new Audio('Sound2/Help.mp3'),new Audio ('Sound2/family.mp3'),
 new Audio('Sound2/friend.mp3'), new Audio ('Sound2/Animal.mp3'), new Audio ('Sound2/House.mp3'), new Audio ('Sound2/School.mp3'), new Audio ('Sound2/Happy.mp3'), new Audio ('Sound2/Sad.mp3'),
-new Audio('Sound2/cold.mp3'), new Audio ('Sound2/Hot.mp3')];
+new Audio('Sound2/cold.mp3'), new Audio ('Sound2/Hot.mp3'), new Audio ('Sound2/Love.mp3')];
 
 const imageHello = new Image();
 imageHello.src="Images/Carte/hello.jpg"
@@ -82,6 +82,10 @@ tableauImage1.push(ImageCold)
 const ImageHot= new Image();
 ImageHot.src = "Images/Carte/Hot.jpg"
 tableauImage1.push(ImageHot)
+
+const ImageLove = new Image();
+ImageLove.src= "Images/Carte/Love.jpg"
+tableauImage1.push(ImageLove)
 
 const Correct = new Audio('Soundeffect/correct.mp3');
 const Wrong = new Audio ('Soundeffect/wrong.mp3');
