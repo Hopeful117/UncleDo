@@ -17,7 +17,7 @@ function rdImage(){
 
     answer.hidden=false
     validate.hidden=false
-    Start.hidden=true
+    Start.disabled=true
     
 
    // Génération de trois réponses aléatoires
