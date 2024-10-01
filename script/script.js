@@ -7,6 +7,7 @@
 
 // Initialisation de la page 
 
+
     let boutonSuivant = document.getElementById("next")
     let boutonPrecedent =document.getElementById("previous")
     let English= document.getElementById("English")
@@ -15,13 +16,16 @@
     
     
     let i=0;
+    let limit=tableauMotsEN1.length-1
   
-    
+    function lesson1(){
+        L1.disabled=true;
     carte.src=tableauImage1[i].src
         English.innerText=tableauMotsEN1[i]
         Thai.innerText=tableauMotsTH1[i]
         boutonPrecedent.disabled=true;
-    let limit=tableauMotsEN1.length-1
+    
+}
    
       
     
