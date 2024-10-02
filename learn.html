@@ -7,7 +7,9 @@
     <title>Learn English with Uncle Do</title>
     <link rel="stylesheet" href="style.css">
     <script src="script/config.js" defer></script> 
+    <script src="script/config2.js" defer></script>
     <script src="script/script.js" defer ></script>
+    <script src="script/script2.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
@@ -23,7 +25,7 @@
 </nav>
 <div id ="menuLesson">
     <button id="L1" onclick="lesson1()">บทเรียนที่ 1</button>
-    <button id="L2">บทเรียนที่ 2</button>
+    <button id="L2" onclick="lesson2()">บทเรียนที่ 2</button>
 </div>
 <body>
 
@@ -51,7 +53,7 @@
       
         
         <div>
-            <button id="sound" onclick="PlaySound()">&#x1F50A;</button>
+            <button id="sound">&#x1F50A;</button>
            </div>
     <div id="blockbutton">
    
@@ -59,9 +61,9 @@
     <div id="btnlearn">
         
        
-    <button id="previous" onclick="precedent()">Previous </button>
+    <button id="previous">Previous </button>
     
-    <button id ="next" onclick="next()">Next</button>
+    <button id ="next">Next</button>
     </div>
     </div>
 </body>
