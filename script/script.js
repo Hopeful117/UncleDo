@@ -13,9 +13,8 @@
     let English= document.getElementById("English")
     let Thai= document.getElementById("Thai")
     let carte= document.querySelector(".carte")
-    document.getElementById("next")
-    document.getElementById("previous")
-    document.getElementById("sound")
+    
+    let sound = document.getElementById("sound")
     
     let i=0;
     let track =0;
@@ -24,35 +23,18 @@
   
     function lesson1(){
          i=0;
-         track=son[i];
+         sound.setAttribute('onclick','sound1()')
+         boutonSuivant.setAttribute('onclick','next1()')
+         boutonPrecedent.setAttribute('onclick','previous1()')
         L1.disabled=true;
         L2.disabled= false;
     carte.src=tableauImage1[i].src
         English.innerText=tableauMotsEN1[i]
         Thai.innerText=tableauMotsTH1[i]
         boutonPrecedent.disabled=true;
-next.addEventListener ("click",()=>{
+
+
         
-       
-        
-            if(i===limit){
-                boutonSuivant.disabled=true;
-                English.innerText=tableauMotsEN1[i]
-                Thai.innerText=tableauMotsTH1[i]
-                carte.src=tableauImage1[i].src
-                console.log(i)
-                
-            }
-            else{
-                boutonSuivant.disabled=false;
-                boutonPrecedent.disabled=false;
-                i++
-                English.innerText=tableauMotsEN1[i]
-            Thai.innerText=tableauMotsTH1[i]
-            carte.src=tableauImage1[i].src
-            }
-            
-        })
     
          
             
@@ -69,35 +51,61 @@ next.addEventListener ("click",()=>{
         
        // fonction gérant l'affichage de l'image et des valeurs associés précédentes     
       
-   previous.addEventListener("click",()=>{
-            if(i===0){
-                boutonPrecedent.disabled=true;
-                
-                
-            }
-            else{
-                boutonPrecedent.disabled=false;
-                
-                boutonSuivant.disabled=false;
-                i--
-                English.innerText=tableauMotsEN1[i]
-            Thai.innerText=tableauMotsTH1[i]
-            carte.src=tableauImage1[i].src
-            console.log(i)
-            }
-        })
+   
 
-        sound.addEventListener("click",()=>{
-           track=son[i];
-            track.play();
-        })
+       
     
+}
+function next1(){
+        
+       
+        
+    if(i===limit){
+        boutonSuivant.disabled=true;
+        English.innerText=tableauMotsEN1[i]
+        Thai.innerText=tableauMotsTH1[i]
+        carte.src=tableauImage1[i].src
+        console.log(i)
+        
+    }
+    else{
+        boutonSuivant.disabled=false;
+        boutonPrecedent.disabled=false;
+        i++
+        English.innerText=tableauMotsEN1[i]
+    Thai.innerText=tableauMotsTH1[i]
+    carte.src=tableauImage1[i].src
+    }
+    
+}
+
+function previous1() {
+    if(i===0){
+        boutonPrecedent.disabled=true;
+        
+        
+    }
+    else{
+        boutonPrecedent.disabled=false;
+        
+        boutonSuivant.disabled=false;
+        i--
+        English.innerText=tableauMotsEN1[i]
+    Thai.innerText=tableauMotsTH1[i]
+    carte.src=tableauImage1[i].src
+    console.log(i)
+    }
 }
 
 
    
       
-    
+function sound1(){
+           
+            
+    track=son[i];
+     track.play();
+ }
     
         
         
