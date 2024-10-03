@@ -7,6 +7,7 @@ function Menu(){
 
 function Learn(){
     document.location.href="learn.html"
+    lesson1();
 }
 
 function Play(){
@@ -19,3 +20,4 @@ function Play(){
 function askUserName() {
     userName = prompt("กรุณากรอกชื่อของคุณ :");
 }
+
